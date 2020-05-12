@@ -8,6 +8,6 @@ def translate(word):
     else:
         return "Word doesn't exist. Please check for speliing errors.."
 
-word = input("Enter word: ")
+word = input("Enter word: ").lower()
 
 print(translate(word))
