@@ -11,8 +11,8 @@ def translate(word):
         if(len(li)>0 and input(f"Did you mean {li[0]}? y/n: ").lower()=='y'):
             return data[li[0]]
         else:
-            return "Word doesn't exist. Please check the word again..!"
+            return ["Word doesn't exist. Please check the word again..!"]
 
 word = input("Enter word: ").lower()
 
-print(translate(word))
+print(*translate(word),sep="\n")
