@@ -20,3 +20,5 @@ def translate(word):
 word = input("Enter word: ").lower()
 
 print(*translate(word),sep="\n")
+
+input("...Press Enter to exit.....")
